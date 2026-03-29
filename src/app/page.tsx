@@ -102,7 +102,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Link href="/onboarding/fingerprint/upload">
-              <Button variant="outline" className="px-8 py-3 text-lg">
+              <Button variant="secondary" className="px-8 py-3 text-lg">
                 Complete Onboarding
               </Button>
             </Link>
@@ -185,7 +185,7 @@ export default function HomePage() {
                 </Button>
               </Link>
               <Link href="/profile/blueprint/viewer">
-                <Button variant="outline" className="px-8 py-3 text-lg">
+                <Button variant="secondary" className="px-8 py-3 text-lg">
                   View Your Blueprint
                 </Button>
               </Link>

@@ -59,7 +59,7 @@ export default function PricingPage() {
         'Verified badge',
       ],
       cta: 'Get Pro',
-      ctaVariant: 'default' as const,
+      ctaVariant: 'primary' as const,
       highlighted: true,
     },
     {
@@ -85,7 +85,7 @@ export default function PricingPage() {
         'Video call features',
       ],
       cta: 'Unlock Blueprint',
-      ctaVariant: 'default' as const,
+      ctaVariant: 'primary' as const,
       highlighted: false,
     },
     {
@@ -109,7 +109,7 @@ export default function PricingPage() {
       ],
       notIncluded: [],
       cta: 'Go Ultimate',
-      ctaVariant: 'default' as const,
+      ctaVariant: 'primary' as const,
       highlighted: false,
     },
   ];
