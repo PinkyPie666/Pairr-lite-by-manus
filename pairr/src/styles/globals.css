@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './animations.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  
+  --primary: #6A0DAD;
+  --primary-foreground: #ffffff;
+  
+  --secondary: #4B0082;
+  --secondary-foreground: #ffffff;
+  
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  
+  --accent: #E0BBE4;
+  --accent-foreground: #4B0082;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #6A0DAD;
+
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  
+  --primary: #6A0DAD;
+  --primary-foreground: #ffffff;
+  
+  --secondary: #2E0854;
+  --secondary-foreground: #ffffff;
+  
+  --muted: #111827;
+  --muted-foreground: #9ca3af;
+  
+  --accent: #4B0082;
+  --accent-foreground: #E0BBE4;
+  
+  --destructive: #7f1d1d;
+  --destructive-foreground: #ffffff;
+
+  --border: #1f2937;
+  --input: #1f2937;
+  --ring: #9D50BB;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-brand-purple-light selection:text-brand-purple-dark;
+  }
+}
+
+@layer components {
+  .btn-premium {
+    @apply px-6 py-3 rounded-premium font-medium transition-all duration-300 hover:shadow-purple-glow active:scale-95;
+  }
+  
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-premium;
+  }
+}
