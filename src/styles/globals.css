@@ -1,8 +1,8 @@
+@import './animations.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './animations.css';
 
 :root {
   --background: #ffffff;
@@ -59,16 +59,16 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground antialiased selection:bg-brand-purple-light selection:text-brand-purple-dark;
+    @apply bg-background text-foreground antialiased;
   }
 }
 
 @layer components {
   .btn-premium {
-    @apply px-6 py-3 rounded-premium font-medium transition-all duration-300 hover:shadow-purple-glow active:scale-95;
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300 active:scale-95;
   }
   
   .glass-card {
-    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-premium;
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
   }
 }
